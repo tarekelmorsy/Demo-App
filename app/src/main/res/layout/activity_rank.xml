@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    tools:context=".RankActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/family_semi_round_bold"
+        android:gravity="center"
+        android:text="قيد سجل تجاري"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/grey_stroke_20dp_rounded_shape">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/title_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/family_semi_round_medium"
+                    android:text="بيانات العميل "
+                    android:textColor="@color/brown_grey"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/title_id2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_id"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/family_semi_round_book"
+                    android:text="الرقم القومي "
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/id_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_id"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@+id/title_id2"
+                    android:layout_toRightOf="@+id/title_id2"
+                    android:fontFamily="@font/family_semi_round_bold"
+                    android:text="13"
+                    android:textColor="@color/purple_500"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/title_Serial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_number"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/family_semi_round_book"
+                    android:text="رقم المسلسل "
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/number_Serial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/id_number"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@+id/title_Serial"
+                    android:layout_toRightOf="@+id/title_Serial"
+                    android:fontFamily="@font/family_semi_round_bold"
+                    android:text="651554"
+                    android:textColor="@color/purple_500"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/title_customer_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/number_Serial"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/family_semi_round_book"
+                    android:text="  رقم العميل"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/customer_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/number_Serial"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@+id/title_customer_number"
+                    android:layout_toRightOf="@+id/title_customer_number"
+                    android:fontFamily="@font/family_semi_round_bold"
+                    android:text="15"
+                    android:textColor="@color/purple_500"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/grey_stroke_20dp_rounded_shape">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/title_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/family_semi_round_medium"
+                    android:text="بيانات الوقت "
+                    android:textColor="@color/brown_grey"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/title_now_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_time"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/family_semi_round_book"
+                    android:text="الرقم الحالي "
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_time"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@+id/title_now_number"
+                    android:layout_toRightOf="@+id/title_now_number"
+                    android:fontFamily="@font/family_semi_round_bold"
+                    android:text="13"
+                    android:textColor="@color/purple_500"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/title_remaining_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_now_number"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/family_semi_round_book"
+                    android:text="الوقت المتبقي "
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/remaining_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_now_number"
+                    android:layout_marginStart="@dimen/activity_horizontal_margin"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                    android:layout_toEndOf="@+id/title_remaining_time"
+                    android:layout_toRightOf="@+id/title_remaining_time"
+                    android:fontFamily="@font/family_semi_round_bold"
+                    android:text="1:30"
+                    android:textColor="@color/purple_500"
+                    android:textSize="14sp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
