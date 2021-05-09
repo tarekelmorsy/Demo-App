@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.*
 import com.google.android.material.textfield.TextInputLayout
 
-class MainActivity2 : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
     //create variable
     lateinit var ed_id: EditText
@@ -15,14 +15,16 @@ class MainActivity2 : AppCompatActivity() {
     lateinit var til_organizations: TextInputLayout
     lateinit var arrayListOrganizations: ArrayList<String>
     lateinit var arrayAdapterOrganizations: ArrayAdapter<String>
+    lateinit var bt_continue: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main2)
+        setContentView(R.layout.activity_main)
 
         ed_id = findViewById(R.id.id_ed)
         bt_next = findViewById(R.id.next)
+                bt_continue = findViewById(R.id.bt_continue)
         ot_organizations = findViewById(R.id.organizations_ot)
         til_organizations = findViewById(R.id.organizations_til)
         arrayListOrganizations = ArrayList<String>()
@@ -46,36 +48,28 @@ class MainActivity2 : AppCompatActivity() {
         // chick id number and Organizations
         // If the customer have any relation between him and the organization it will open directly  BranchActivity
         bt_next.setOnClickListener {
-            if (ed_id.text.toString() == "13" && ot_organizations.text.toString() == arrayListOrganizations.get(
-                    0
-                )
-            ) {
+            if (ed_id.text.toString() == "28908162701697" && ot_organizations.text.toString() == arrayListOrganizations.get(0))
+            {
 
-                intent = Intent(this@MainActivity2, BranchActivity::class.java)
+                intent = Intent(this@MainActivity, BranchActivity::class.java)
                 intent.putExtra("organizationsName", "1")
                 startActivity(intent)
-            } else if (ed_id.text.toString() == "13" && ot_organizations.text.toString() == arrayListOrganizations.get(
-                    1
-                )
+            } else if (ed_id.text.toString() == "28908162701697" && ot_organizations.text.toString() == arrayListOrganizations.get(1)
             ) {
 
-                intent = Intent(this@MainActivity2, BranchActivity::class.java)
+                intent = Intent(this@MainActivity, BranchActivity::class.java)
                 intent.putExtra("organizationsName", "2")
                 startActivity(intent)
-            } else if (ed_id.text.toString() == "13" && ot_organizations.text.toString() == arrayListOrganizations.get(
-                    3
-                )
+            } else if (ed_id.text.toString() == "28908162701697" && ot_organizations.text.toString() == arrayListOrganizations.get(3)
             ) {
 
-                intent = Intent(this@MainActivity2, BranchActivity::class.java)
+                intent = Intent(this@MainActivity, BranchActivity::class.java)
                 intent.putExtra("organizationsName", "3")
                 startActivity(intent)
-            } else if (ed_id.text.toString() == "13" && ot_organizations.text.toString() == arrayListOrganizations.get(
-                    5
-                )
+            } else if (ed_id.text.toString() == "28908162701697" && ot_organizations.text.toString() == arrayListOrganizations.get(5)
             ) {
 
-                intent = Intent(this@MainActivity2, BranchActivity::class.java)
+                intent = Intent(this@MainActivity, BranchActivity::class.java)
                 intent.putExtra("organizationsName", "4")
                 startActivity(intent)
             } else if (ed_id.text.toString().isEmpty()) {
@@ -90,6 +84,12 @@ class MainActivity2 : AppCompatActivity() {
                 Toast.makeText(this, "الرقم القومي أو المؤسسة  خاطئان", Toast.LENGTH_SHORT).show()
             }
 
+
+        }
+        // show Id Number Activity
+        bt_continue.setOnClickListener {
+            intent = Intent(this@MainActivity, IdNumberActivity::class.java)
+            startActivity(intent)
 
         }
 

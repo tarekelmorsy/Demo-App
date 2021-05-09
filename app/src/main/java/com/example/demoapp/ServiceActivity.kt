@@ -56,7 +56,7 @@ class ServiceActivity : AppCompatActivity(), CustomAdapter.RecyclerViewInterface
         } else if (extras?.getString("organizationsName") == "4") {
             modelList.add(Model("قيد سجل تجاري ", R.drawable.tglogo))
             modelList.add(Model("مستخرج سجل تجاري ", R.drawable.tg2logo))
-            modelList.add(Model(" إصافة نشاط", R.drawable.tglogo))
+            modelList.add(Model(" إضافة نشاط", R.drawable.tglogo))
 
         } else if (extras?.getString("organizationsName") == "3") {
             modelList.add(Model("اثبات تاريخ ", R.drawable.tglogo))

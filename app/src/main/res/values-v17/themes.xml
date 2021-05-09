@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MyAlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="fontFamily">@font/family_semi_round_book</item>
+        <item name="android:layoutDirection">rtl</item>
+
+
+    </style>
+</resources>

@@ -13,4 +13,10 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="MyAlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="fontFamily">@font/family_semi_round_book</item>
+        <item name="android:layoutDirection" tools:targetApi="jelly_bean_mr1">rtl</item>
+    </style>
+
 </resources>

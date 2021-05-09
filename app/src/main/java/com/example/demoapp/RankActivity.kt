@@ -17,5 +17,6 @@ class RankActivity : AppCompatActivity() {
             val value = extras.getString("ServiceName")
             title.setText(value)
         }
+        //Here you write time operations
     }
 }
